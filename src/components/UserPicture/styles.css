@@ -3,4 +3,5 @@
     height: 70px;
     object-fit: cover;
     border-radius: 100%;
+    border: 5px solid lightcoral;
 }

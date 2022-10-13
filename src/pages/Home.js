@@ -1,11 +1,13 @@
 import Post from "../components/Posts";
+import Header from "../components/Header";
 
 const Home = () =>{
     return (
-        <section>
+        <>
+            <Header />
             <Post />
-        </section>
-    )
-}
+        </>
+    );
+};
 
 export { Home };

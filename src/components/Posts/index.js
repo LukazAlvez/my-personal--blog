@@ -11,10 +11,9 @@ const Post = () => {
         setPosts(data)
     },[]);
 
-
     return (
         <div className="posts">
-            {posts.map((post, index)=>{
+            {posts.length !== 0 || undefined ? posts.map((post, index)=>{
                 return(
                     <div key={index} className="post">
                         <div className='user'>
@@ -26,7 +25,8 @@ const Post = () => {
                         </div>
                     </div>
                 )
-            })}
+            }) : <h2> Posts not found </h2>
+            } 
         </div>
     );
 };
