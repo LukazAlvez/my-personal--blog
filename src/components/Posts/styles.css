@@ -1,0 +1,26 @@
+.posts{
+    width: 900px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.post{
+    padding: 10px;
+    margin-top: 30px;
+    border-radius: 12px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.user{
+    display: flex;
+    align-items: center;
+}
+.user h3{
+    margin-left: 20px;
+}
+
+.content{
+    margin-left: 80px;
+    padding: 10px;
+    color: rgba(0, 0, 0, 0.7);
+}

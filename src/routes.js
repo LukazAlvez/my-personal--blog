@@ -1,11 +1,11 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import { Posts } from "./pages/Posts";
+import { Home } from "./pages/Home";
 
 const AppRoutes = () =>{
     return(
         <BrowserRouter>
             <Routes>
-                <Route exact path="/" element={<Posts />} />
+                <Route exact path="/" element={<Home />} />
             </Routes>
         </BrowserRouter>
     )
