@@ -1,12 +1,13 @@
-import '../Header/styles.css';
+import { useContext } from 'react';
+import { ThemeContext } from '../../contextApi/theme-context';
+import { Div } from './styles';
 
-const Header = () =>{
-    return(
-        <div className='header'>
-            <h1>Lucas Alves</h1>
-            <span>Web Devoloper</span>
-        </div>
-    );
+export const Header = () => {
+  const { theme } = useContext(ThemeContext);
+  return (
+    <Div className='header' style={{ backgroundColor: theme.background }}>
+      <h1>Lucas Alves</h1>
+      <span style={{ color: theme.color }}>Web Devoloper</span>
+    </Div>
+  );
 };
-
-export default Header;

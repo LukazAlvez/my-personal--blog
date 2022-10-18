@@ -1,13 +1,16 @@
-import Post from "../components/Posts";
-import Header from "../components/Header";
+import { Post } from '../components/Post';
+import { Header } from '../components/Header';
+import { ThemeTogglerButton } from '../components/theme-toggler-button';
+import { useContext } from 'react';
+import { ThemeContext } from '../contextApi/theme-context';
 
-const Home = () =>{
-    return (
-        <>
-            <Header />
-            <Post />
-        </>
-    );
+export const Home = () => {
+  const { theme } = useContext(ThemeContext);
+  return (
+    <div style={{ backgroundColor: theme.backgroundColor }}>
+      <ThemeTogglerButton />
+      <Header />
+      <Post />
+    </div>
+  );
 };
-
-export { Home };
